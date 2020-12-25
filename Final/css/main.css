@@ -1,0 +1,105 @@
+/* The navbar */
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .stickyimage{
+    /* The image used */
+    background-image: url("../img/automoblox_logo.jpg");
+  
+    min-height: 150px;
+  
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+  
+  
+  
+  /* Navbar links */
+.navbar a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  body {
+    background-color:#ffffff;
+    font-family: 'Bungee Outline', cursive;
+    color: #17141d ;
+  }
+  p{
+    color: #000;
+  }
+
+  .container {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+
+  .car {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #b3a7ca;
+    border-radius: 15px;
+    box-shadow: -1rem 0 3rem #90899e; 
+    transition: 0.4s ease-in;
+    position: relative;
+    left: 0px;
+  }
+  
+  .car:hover {
+    transform: translateY(30px);
+    transition: 0.4s ease-in;
+  }
+
+
+  .car:hover ~ .car {
+    position: relative;
+    right: 50px;
+    transition: 0.4s ease-in;
+  }
+
+  svg {
+    fill: #17141d;
+    stroke-width: 50%;
+  }
+
+  /* Accordion style*/
+  .accordion {
+    display: flex;
+    justify-content: flex-end   ;
+    background-color: rgb(238, 227, 227);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  
